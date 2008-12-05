@@ -104,6 +104,7 @@ switch($mode) {
 <?php if(!empty($text)) { echo '<!-- Last Action --><div id="message" class="updated fade"><p>'.$text.'</p></div>'; } ?>
 <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>"> 
 <div class="wrap"> 
+	<?php screen_icon(); ?>
 	<h2><?php _e('Comment Navigation Options', 'wp-commentnavi'); ?></h2>
 	<h3><?php _e('Comment Navigation Text', 'wp-commentnavi'); ?></h3>
 	<table class="form-table">
@@ -205,7 +206,7 @@ switch($mode) {
 <!-- Uninstall WP-CommentNavi -->
 <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>"> 
 <div class="wrap"> 
-	<h2><?php _e('Uninstall WP-CommentNavi', 'wp-commentnavi'); ?></h2>
+	<h3><?php _e('Uninstall WP-CommentNavi', 'wp-commentnavi'); ?></h3>
 	<p>
 		<?php _e('Deactivating WP-CommentNavi plugin does not remove any data that may have been created, such as the comment navigation options. To completely remove this plugin, you can uninstall it here.', 'wp-commentnavi'); ?>
 	</p>

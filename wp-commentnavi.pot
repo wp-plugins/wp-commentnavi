@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP-CommentNavi 1.00\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-04 16:35+0800\n"
+"POT-Creation-Date: 2008-12-05 13:19+0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Lester Chan <lesterchan@gmail.com>\n"
 "Language-Team: Lester Chan <lesterchan@gmail.com>\n"
@@ -11,13 +11,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: English\n"
 "X-Poedit-Country: SINGAPORE\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
 "X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: commentnavi-options.php:46
-#: commentnavi-options.php:107
-#: commentnavi-options.php:171
+#: commentnavi-options.php:108
+#: commentnavi-options.php:172
 msgid "Comment Navigation Options"
 msgstr ""
 
@@ -30,7 +31,7 @@ msgid "No Comment Navigation Option Updated"
 msgstr ""
 
 #: commentnavi-options.php:62
-#: commentnavi-options.php:240
+#: commentnavi-options.php:241
 msgid "UNINSTALL WP-CommentNavi"
 msgstr ""
 
@@ -45,7 +46,7 @@ msgid "Error deleting Setting Key '%s'."
 msgstr ""
 
 #: commentnavi-options.php:96
-#: commentnavi-options.php:208
+#: commentnavi-options.php:209
 msgid "Uninstall WP-CommentNavi"
 msgstr ""
 
@@ -54,115 +55,115 @@ msgstr ""
 msgid "<a href=\"%s\">Click Here</a> To Finish The Uninstallation And WP-CommentNavi Will Be Deactivated Automatically."
 msgstr ""
 
-#: commentnavi-options.php:108
+#: commentnavi-options.php:109
 msgid "Comment Navigation Text"
 msgstr ""
 
-#: commentnavi-options.php:111
+#: commentnavi-options.php:112
 msgid "Text For Number Of Pages"
 msgstr ""
 
-#: commentnavi-options.php:114
+#: commentnavi-options.php:115
 msgid "The current page number."
 msgstr ""
 
-#: commentnavi-options.php:115
-#: commentnavi-options.php:136
-#: commentnavi-options.php:143
+#: commentnavi-options.php:116
+#: commentnavi-options.php:137
+#: commentnavi-options.php:144
 msgid "The total number of pages."
 msgstr ""
 
-#: commentnavi-options.php:119
+#: commentnavi-options.php:120
 msgid "Text For Current Page"
 msgstr ""
 
-#: commentnavi-options.php:122
-#: commentnavi-options.php:129
+#: commentnavi-options.php:123
+#: commentnavi-options.php:130
 msgid "The page number."
 msgstr ""
 
-#: commentnavi-options.php:126
+#: commentnavi-options.php:127
 msgid "Text For Page"
 msgstr ""
 
-#: commentnavi-options.php:133
+#: commentnavi-options.php:134
 msgid "Text For First Comment"
 msgstr ""
 
-#: commentnavi-options.php:140
+#: commentnavi-options.php:141
 msgid "Text For Last Comment"
 msgstr ""
 
-#: commentnavi-options.php:147
+#: commentnavi-options.php:148
 msgid "Text For Next Comment"
 msgstr ""
 
-#: commentnavi-options.php:153
+#: commentnavi-options.php:154
 msgid "Text For Previous Comment"
 msgstr ""
 
-#: commentnavi-options.php:159
+#: commentnavi-options.php:160
 msgid "Text For Next ..."
 msgstr ""
 
-#: commentnavi-options.php:165
+#: commentnavi-options.php:166
 msgid "Text For Previous ..."
 msgstr ""
 
-#: commentnavi-options.php:174
+#: commentnavi-options.php:175
 msgid "Comment Navigation Style"
 msgstr ""
 
-#: commentnavi-options.php:177
+#: commentnavi-options.php:178
 msgid "Normal"
 msgstr ""
 
-#: commentnavi-options.php:178
+#: commentnavi-options.php:179
 msgid "Drop Down List"
 msgstr ""
 
-#: commentnavi-options.php:183
+#: commentnavi-options.php:184
 msgid "Number Of Pages To Show?"
 msgstr ""
 
-#: commentnavi-options.php:189
+#: commentnavi-options.php:190
 msgid "Always Show Comment Navigation?"
 msgstr ""
 
-#: commentnavi-options.php:192
-#: commentnavi-options.php:239
+#: commentnavi-options.php:193
+#: commentnavi-options.php:240
 msgid "Yes"
 msgstr ""
 
-#: commentnavi-options.php:193
+#: commentnavi-options.php:194
 msgid "No"
 msgstr ""
 
-#: commentnavi-options.php:199
+#: commentnavi-options.php:200
 msgid "Save Changes"
 msgstr ""
 
-#: commentnavi-options.php:210
+#: commentnavi-options.php:211
 msgid "Deactivating WP-CommentNavi plugin does not remove any data that may have been created, such as the comment navigation options. To completely remove this plugin, you can uninstall it here."
 msgstr ""
 
-#: commentnavi-options.php:213
+#: commentnavi-options.php:214
 msgid "WARNING:"
 msgstr ""
 
-#: commentnavi-options.php:214
+#: commentnavi-options.php:215
 msgid "Once uninstalled, this cannot be undone. You should use a Database Backup plugin of WordPress to back up all the data first."
 msgstr ""
 
-#: commentnavi-options.php:217
+#: commentnavi-options.php:218
 msgid "The following WordPress Options will be DELETED:"
 msgstr ""
 
-#: commentnavi-options.php:222
+#: commentnavi-options.php:223
 msgid "WordPress Options"
 msgstr ""
 
-#: commentnavi-options.php:240
+#: commentnavi-options.php:241
 msgid ""
 "You Are About To Uninstall WP-CommentNavi From WordPress.\\n"
 "This Action Is Not Reversible.\\n"
