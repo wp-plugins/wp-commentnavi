@@ -44,9 +44,9 @@ function commentnavi_menu() {
 }
 
 
-### Function: Comment Navigation CSS
-add_action('wp_print_styles', 'commentnavi__stylesheets');
-function commentnavi__stylesheets() {
+### Function: Enqueue CommentNavi Stylesheets
+add_action('wp_print_styles', 'commentnavi_stylesheets');
+function commentnavi_stylesheets() {
 	if(@file_exists(TEMPLATEPATH.'/commentnavi-css.css')) {
 		wp_enqueue_style('wp-commentnavi', get_stylesheet_directory_uri().'/commentnavi-css.css', false, '1.10', 'all');		
 	} else {
