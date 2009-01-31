@@ -96,7 +96,7 @@ function wp_commentnavi($before = '', $after = '') {
 				}					
 				if ($start_page >= 2 && $pages_to_show < $max_page) {
 					$first_page_text = str_replace("%TOTAL_PAGES%", number_format_i18n($max_page), $commentnavi_options['first_text']);
-					echo '<a href="'.clean_url(get_comments_pagenum_link()).'" title="'.$first_page_text.'">'.$first_page_text.'</a>';
+					echo '<a href="'.clean_url(get_comments_pagenum_link()).'" class="first" title="'.$first_page_text.'">'.$first_page_text.'</a>';
 					if(!empty($commentnavi_options['dotleft_text'])) {
 						echo '<span class="extend">'.$commentnavi_options['dotleft_text'].'</span>';
 					}
@@ -108,7 +108,7 @@ function wp_commentnavi($before = '', $after = '') {
 						echo '<span class="current">'.$current_page_text.'</span>';
 					} else {
 						$page_text = str_replace("%PAGE_NUMBER%", number_format_i18n($i), $commentnavi_options['page_text']);
-						echo '<a href="'.clean_url(get_comments_pagenum_link($i)).'" title="'.$page_text.'">'.$page_text.'</a>';
+						echo '<a href="'.clean_url(get_comments_pagenum_link($i)).'" class="page" title="'.$page_text.'">'.$page_text.'</a>';
 					}
 				}
 				next_comments_link($commentnavi_options['next_text'], $max_page);
@@ -117,7 +117,7 @@ function wp_commentnavi($before = '', $after = '') {
 						echo '<span class="extend">'.$commentnavi_options['dotright_text'].'</span>';
 					}
 					$last_page_text = str_replace("%TOTAL_PAGES%", number_format_i18n($max_page), $commentnavi_options['last_text']);
-					echo '<a href="'.clean_url(get_comments_pagenum_link($max_page)).'" title="'.$last_page_text.'">'.$last_page_text.'</a>';
+					echo '<a href="'.clean_url(get_comments_pagenum_link($max_page)).'" class="last" title="'.$last_page_text.'">'.$last_page_text.'</a>';
 				}
 				break;
 			case 2;
