@@ -55,6 +55,40 @@ function commentnavi_stylesheets() {
 }
 
 
+### Function: CommentNavi Public Variables
+add_filter('query_vars', 'commentnavi_variables');
+function commentnavi_variables($public_query_vars) {
+	$public_query_vars[] = 'comment-all';
+	return $public_query_vars;
+}
+
+
+### Function: Display All Comments
+add_action('pre_get_posts', 'commentnavi_allcomments');
+function commentnavi_allcomments() {
+	if(intval(get_query_var('comment-all')) == 1) {
+		set_query_var('comments_per_page', 9999);
+	}
+}
+
+
+### Function: Display All Comment Link
+function wp_commentnavi_all_comments_link($text = 'View all comments', $display = true) {
+	global $post;
+	$post_permalink = get_permalink();
+	if(strpos($post_permalink, '?') !== false) {
+		$post_permalink = "$post_permalink&amp;comment-all=1";
+	} else {
+		$post_permalink = "$post_permalink?comment-all=1";
+	}
+	if($display) {
+		echo '<a href="'.$post_permalink.'" class="wp-commentnavi-all-comments-link" title="'.$text.'">'.$text.'</a>';
+	} else {
+		return $post_permalink;
+	}
+}
+
+
 ### Function: Comment Navigation: Boxed Style Paging
 function wp_commentnavi($before = '', $after = '') {
 	global $wp_query;
