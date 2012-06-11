@@ -102,7 +102,7 @@ switch($mode) {
 		$commentnavi_options = get_option('commentnavi_options');
 ?>
 <?php if(!empty($text)) { echo '<!-- Last Action --><div id="message" class="updated fade"><p>'.$text.'</p></div>'; } ?>
-<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?page=<?php echo plugin_basename(__FILE__); ?>">
+<form method="post" action="<?php echo admin_url('admin.php?page='.plugin_basename(__FILE__)); ?>">
 <div class="wrap"> 
 	<?php screen_icon(); ?>
 	<h2><?php _e('Comment Navigation Options', 'wp-commentnavi'); ?></h2>
@@ -204,7 +204,7 @@ switch($mode) {
 <p>&nbsp;</p>
 
 <!-- Uninstall WP-CommentNavi -->
-<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?page=<?php echo plugin_basename(__FILE__); ?>">
+<form method="post" action="<?php echo admin_url('admin.php?page='.plugin_basename(__FILE__)); ?>">
 <div class="wrap"> 
 	<h3><?php _e('Uninstall WP-CommentNavi', 'wp-commentnavi'); ?></h3>
 	<p>

@@ -155,7 +155,7 @@ function wp_commentnavi($before = '', $after = '') {
 				}
 				break;
 			case 2;
-				echo '<form action="'.htmlspecialchars($_SERVER['PHP_SELF']).'" method="get">'."\n";
+				echo '<form action="'.admin_url('admin.php?page='.plugin_basename(__FILE__)).'" method="get">'."\n";
 				echo '<select size="1" onchange="document.location.href = this.options[this.selectedIndex].value;">'."\n";
 				for($i = 1; $i  <= $max_page; $i++) {
 					$page_num = $i;
