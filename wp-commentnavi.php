@@ -6,6 +6,7 @@ Description: Adds a more advanced paging navigation for your comments to your Wo
 Version: 1.10
 Author: Lester 'GaMerZ' Chan
 Author URI: http://lesterchan.net
+Text Domain: wp-commentnavi
 */
 
 
