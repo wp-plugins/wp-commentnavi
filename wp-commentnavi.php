@@ -2,15 +2,15 @@
 /*
 Plugin Name: WP-CommentNavi
 Plugin URI: http://lesterchan.net/portfolio/programming/php/
-Description: Adds a more advanced paging navigation for your comments to your WordPress 2.7 and above blog. 
+Description: Adds a more advanced paging navigation for your comments to your WordPress 2.7 and above blog.
 Version: 1.10
 Author: Lester 'GaMerZ' Chan
 Author URI: http://lesterchan.net
 */
 
 
-/*  
-	Copyright 2009  Lester Chan  (email : lesterchan@gmail.com)
+/*
+	Copyright 2013  Lester Chan  (email : lesterchan@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -48,7 +48,7 @@ function commentnavi_menu() {
 add_action('wp_print_styles', 'commentnavi_stylesheets');
 function commentnavi_stylesheets() {
 	if(@file_exists(TEMPLATEPATH.'/commentnavi-css.css')) {
-		wp_enqueue_style('wp-commentnavi', get_stylesheet_directory_uri().'/commentnavi-css.css', false, '1.10', 'all');		
+		wp_enqueue_style('wp-commentnavi', get_stylesheet_directory_uri().'/commentnavi-css.css', false, '1.10', 'all');
 	} else {
 		wp_enqueue_style('wp-commentnavi', plugins_url('wp-commentnavi/commentnavi-css.css'), false, '1.10', 'all');
 	}
@@ -127,7 +127,7 @@ function wp_commentnavi($before = '', $after = '') {
 			case 1:
 				if(!empty($pages_text)) {
 					echo '<span class="pages">'.$pages_text.'</span>';
-				}					
+				}
 				if ($start_page >= 2 && $pages_to_show < $max_page) {
 					$first_page_text = str_replace("%TOTAL_PAGES%", number_format_i18n($max_page), $commentnavi_options['first_text']);
 					echo '<a href="'.clean_url(get_comments_pagenum_link()).'" class="first" title="'.$first_page_text.'">'.$first_page_text.'</a>';
@@ -136,7 +136,7 @@ function wp_commentnavi($before = '', $after = '') {
 					}
 				}
 				previous_comments_link($commentnavi_options['prev_text']);
-				for($i = $start_page; $i  <= $end_page; $i++) {						
+				for($i = $start_page; $i  <= $end_page; $i++) {
 					if($i == $paged) {
 						$current_page_text = str_replace("%PAGE_NUMBER%", number_format_i18n($i), $commentnavi_options['current_text']);
 						echo '<span class="current">'.$current_page_text.'</span>';
@@ -180,8 +180,8 @@ function wp_commentnavi($before = '', $after = '') {
 
 
 ### Function: Comment Navigation: Drop Down Menu (Deprecated)
-function wp_commentnavi_dropdown() { 
-	wp_commentnavi(); 
+function wp_commentnavi_dropdown() {
+	wp_commentnavi();
 }
 
 

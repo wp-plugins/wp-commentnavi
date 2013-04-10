@@ -1,9 +1,9 @@
-=== WP-CommentNavi ===
+  === WP-CommentNavi ===
 Contributors: GamerZ
 Donate link: http://lesterchan.net/site/donation/
 Tags: commentnavi, navi, navigation, wp-commentnavi, page
 Requires at least: 2.8
-Tested up to: 3.3.1
+Tested up to: 3.5.1
 Stable tag: 1.10
 
 Adds a more advanced paging navigation for your comments to your WordPress 2.8 and above blog.
