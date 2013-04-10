@@ -1,4 +1,4 @@
-  === WP-CommentNavi ===
+=== WP-CommentNavi ===
 Contributors: GamerZ
 Donate link: http://lesterchan.net/site/donation/
 Tags: commentnavi, navi, navigation, wp-commentnavi, page
